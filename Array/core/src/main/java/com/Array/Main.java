@@ -486,7 +486,7 @@ public class Main implements ApplicationListener {
             public void handleHttpResponse(Net.HttpResponse httpResponse) {
 
                 if (httpResponse.getStatus().getStatusCode() == 200) {
-                    Gdx.app.log("Firebase", "Leaderboard updated!");
+                    Gdx.app.log("Firebase", "Leaderboard updated! \n 1st score:"+first+"\n 2nd score: "+second+"\n 3rd Score: "+third);
                 } else {
                     Gdx.app.log("Firebase", "Update Error: "
                         + httpResponse.getStatus().getStatusCode()
